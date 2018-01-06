@@ -28,7 +28,7 @@ RUN bash -c "/etc/init.d/postgresql start && createdb swift; /etc/init.d/postgre
 USER root
 WORKDIR /tmp
 
-RUN curl -L -o plswift.tgz https://github.com/PL-Swift/plswift/archive/0.0.4.tar.gz
+RUN curl -L -o plswift.tgz https://github.com/PL-Swift/plswift/archive/0.0.5.tar.gz
 
 RUN bash -c "\
   tar zxf plswift.tgz; cd PLSwift*; \
